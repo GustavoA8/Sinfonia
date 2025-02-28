@@ -1,0 +1,22 @@
+header nav {
+    background-color: blue;
+}
+#demo{
+    width: 100%;
+    ;
+}
+#servico{
+    background-color: rgb(62, 62, 62);
+}
+#servico ul{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+    
+}
+#servico ul figure{
+    width: 30%;
+    justify-content: baseline;
+
+}
