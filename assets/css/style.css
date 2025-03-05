@@ -20,7 +20,7 @@ header nav {
     color: aliceblue;
 }
 #servico ul figure img{
-    width: 13%;
+    width: 18%;
     filter: invert(100%);
 }
 footer{
@@ -44,4 +44,19 @@ footer #credito {
 }
 .icon-drop{
     width: 5%;
+}
+#produtos{
+    text-align: center;
+}
+.produtos-single{
+    background-color: aquamarine;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 30%;
+    padding: 0 20px;
+    margin:auto;
+}
+.produtos-single img{
+    width: 200px;
+    height: 200px;
 }
