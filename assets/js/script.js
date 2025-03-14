@@ -16,6 +16,36 @@ const items = [{
         img: "piano.png",
         preco: 1700.89
     },
+    {
+        id: 3,
+        nome: "Teste",
+        img: "piano.png",
+        preco: 1700.89
+    },
+    {
+        id: 3,
+        nome: "Teste",
+        img: "piano.png",
+        preco: 1700.89
+    },
+    {
+        id: 3,
+        nome: "Teste",
+        img: "piano.png",
+        preco: 1700.89
+    },
+    {
+        id: 3,
+        nome: "Teste",
+        img: "piano.png",
+        preco: 1700.89
+    },
+    {
+        id: 3,
+        nome: "Teste",
+        img: "piano.png",
+        preco: 1700.89
+    }
 
 ]
 inicializarLoja = () => {
@@ -24,8 +54,8 @@ inicializarLoja = () => {
         console.log(val.nome);
         containerProdutos.innerHTML += `
         
-  <div class="card col-xxl-4 mx-auto" style="width:400px">
-    <img class="card-img-top mx-auto" src="img/` + val.img + `" alt="Card image" style="width:100%">
+  <div class="card col-xxl-4 col-sm-3 mx-auto mt-4" style="width:400px">
+    <img class="card-img-top mx-auto" src="img/violino.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">` + val.nome + `</h4>
       <p class="card-text">R$` + val.preco + `</p>
