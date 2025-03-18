@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 header nav {
-    background-color: blue;
+    background-color: #0000ff;
 }
 #demo{
     width: 100%;
@@ -70,6 +70,8 @@ footer #credito {
     background: rgb(5, 99, 241);
     border-radius: 20px;
     overflow: hidden;
+    padding: 0;
+
     
 }
 .card::before{
@@ -155,8 +157,4 @@ footer #credito {
 .card:hover .contentBox .buy{
     top: 0;
     opacity: 1;
-}
-.pdt{
-    display: flex;
-    gap: 2%;
 }
