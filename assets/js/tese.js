@@ -36,3 +36,15 @@ const inicializarLoja = (items) => {
     `;
   });
 }
+
+function logar(){
+  const usuario = document.getElementById("usuario").value;
+  const senha = document.getElementById("senha").value;
+
+  if (usuario == "biaefifo02" && senha == "123"){
+    window.alert("logado com sucesso")
+    window.location.href = "teste.html";
+  }else{
+    window.alert("usuario ou senha invalida")
+  }
+}
