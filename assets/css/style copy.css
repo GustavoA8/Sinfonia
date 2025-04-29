@@ -133,6 +133,9 @@ footer #credito {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+.card .contentBox h5{
+    color: aliceblue;
+}
 .card .contentBox .price{
     font-size: 24px;
     color: aliceblue;
