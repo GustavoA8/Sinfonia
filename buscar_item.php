@@ -1,9 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "bdsinfonia");
-
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
+include "conexao.php";
 
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']);

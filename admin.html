@@ -19,22 +19,21 @@
 
 <body style="background-color: #ffffff;padding: 0;margin: 0;width: 100%;">
     <div id="caixa" style="min-width: 400px;min-height: 100px;;width: 30%;" class="container-fluid bg-secondary">
-        <div class="row text-center pt-3">
+        <form action="login.php" method="POST" class="text-center pt-3 text-white">
             <h1>Admin</h1>
             <div class="pb-4">
-                <label for="" class="col-xxl-3">Usuario:</label>
-                <input type="text" class="col-xxl-6" id="usuario">
-                <label for="" class="col-xxl-3">Senha:</label>
-                <input type="password" class="col-xxl-6" id="senha">
-                <button class="col-xxl-8 mt-3" onclick="logar()">Entrar</button>
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuário:</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="senha" name="senha" required>
+                </div>
+                <button type="submit" class="btn btn-light">Entrar</button>
             </div>
-
-
-        </div>
-
+        </form>
     </div>
-
 </body>
-<script src="assets/js/tese.js"></script>
 
 </html>

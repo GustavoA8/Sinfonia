@@ -1,10 +1,7 @@
 <?php
 if (isset($_GET['id'])) {
-    $conn = new mysqli("localhost", "root", "", "bdsinfonia");
-
-    if ($conn->connect_error) {
-        die("Erro de conexão: " . $conn->connect_error);
-    }
+    
+    include "conexao.php";
 
     $id = intval($_GET['id']);
     $conn->query("DELETE FROM itens WHERE item_id = $id");

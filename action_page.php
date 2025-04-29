@@ -1,7 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "bdsinfonia");
-if ($conn->connect_error) die("Erro: " . $conn->connect_error);
-
+include "conexao.php";
 // Coleta os dados
 $nome = $_POST['nome'];
 $estado = $_POST['estado'];

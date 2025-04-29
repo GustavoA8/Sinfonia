@@ -1,10 +1,12 @@
 <?php
-// Conexão com o banco
-$conn = new mysqli("localhost", "root", "", "bdsinfonia");
+session_start();
 
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
+if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
+    header("Location: admin.html");
+    exit;
 }
+
+include "conexao.php";
 
 /// Buscar tipos e marcas e armazenar em arrays reutilizáveis
 $tipos = [];
@@ -40,6 +42,7 @@ $itens_result = $conn->query("
 <body>
     <header class="bg-primary w-100 text-center py-3 ">
         <h1 class="text-light">Estoque Sinfonia</h1>
+        <a href="logout.php" class="btn btn-danger me-3 px-5">Sair</a>
     </header>
     <main class="w-75 mx-auto mt-5 border border-dark">
 
