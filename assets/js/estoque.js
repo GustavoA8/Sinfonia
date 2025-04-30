@@ -55,7 +55,7 @@ function comboMarca(){
 function carregarDadosEditar(id) {
   console.log("ID recebido para edição:", id); // ← DEBUG
 
-  fetch('buscar_item.php?id=' + id)
+  fetch('../buscar_item.php?id=' + id)
       .then(response => response.json())
       .then(dados => {
           console.log("Dados recebidos:", dados); // ← DEBUG
@@ -68,7 +68,7 @@ function carregarDadosEditar(id) {
           document.getElementById('nomeE').value = dados.item_nome;
           document.getElementById('estadoE').value = dados.item_estado;
           document.getElementById('precoE').value = dados.item_preco;
-          document.getElementById('imagem-preview').src = dados.item_img;
+          document.getElementById('imagem-preview').src = "../" + dados.item_img;
           document.getElementById('tipoE').value = dados.item_tipo_fk;
           document.getElementById('marcaE').value = dados.item_marca_fk;
         

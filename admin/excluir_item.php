@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['id'])) {
     
-    include "conexao.php";
+    include "../conexao.php";
 
     $id = intval($_GET['id']);
     $conn->query("DELETE FROM itens WHERE item_id = $id");

@@ -6,7 +6,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
     exit;
 }
 
-include "conexao.php";
+include "../conexao.php";
 
 /// Buscar tipos e marcas e armazenar em arrays reutilizáveis
 $tipos = [];
@@ -36,7 +36,7 @@ $itens_result = $conn->query("
     <title>Estoque</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style copy.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -44,7 +44,7 @@ $itens_result = $conn->query("
         <h1 class="text-light">Estoque Sinfonia</h1>
         <a href="logout.php" class="btn btn-danger me-3 px-5">Sair</a>
     </header>
-    <main class="w-75 mx-auto mt-5 border border-dark">
+    <main class="w-75 mx-auto mt-5 border border-dark mb-5">
 
         <button type="button" class="mt-3 btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#myModal">Cadastrar</button>
@@ -71,7 +71,7 @@ if ($itens_result->num_rows > 0) {
         echo "<tr>";
         echo "<td>" . $row['item_id'] . "</td>";
         echo "<td>" . $row['item_nome'] . "</td>";
-        echo "<td><img src='" . $row['item_img'] . "' alt='Imagem' width='50'></td>";
+        echo "<td><img src='../" . $row['item_img'] . "' alt='Imagem' width='50'></td>";
         echo "<td>" . $row['tipo_nome'] . "</td>";
         echo "<td>" . $row['item_estado'] . "</td>";
         echo "<td>" . $row['nome'] . "</td>";
@@ -231,7 +231,7 @@ if ($itens_result->num_rows > 0) {
             </div>
         </div>
     </div>
-    <script src="assets/js/estoque.js"></script>
+    <script src="../assets/js/estoque.js"></script>
 </body>
 
 </html>

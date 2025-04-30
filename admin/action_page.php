@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 // Coleta os dados
 $nome = $_POST['nome'];
 $estado = $_POST['estado'];
@@ -42,21 +42,28 @@ if ($marca === "Outra") {
 // Upload da imagem
 $imagem = $_FILES['imagem'];
 $imagem_nome = basename($imagem['name']);
-$diretorio = "img/";
+$diretorio = "../img/";
 $caminho = $diretorio . time() . "_" . $imagem_nome;
 
 if (!is_dir($diretorio)) {
     mkdir($diretorio, 0777, true);
 }
 
+
+
 if (move_uploaded_file($imagem['tmp_name'], $caminho)) {
     // Inserção do item
+
+    $diretorio = "img/";
+    $caminho = $diretorio . time() . "_" . $imagem_nome;
+
     $stmt = $conn->prepare("INSERT INTO itens (item_nome, item_img, item_tipo_fk, item_estado, item_marca_fk, item_preco)
                             VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssissd", $nome, $caminho, $tipo_id, $estado, $marca_id, $preco);
 
     if ($stmt->execute()) {
         echo "Produto cadastrado com sucesso!";
+        header("Location: estoque.php");
     } else {
         echo "Erro ao cadastrar item: " . $stmt->error;
     }

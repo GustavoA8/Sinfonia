@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 
 $id = $_POST['item_id'];
 $nome = $_POST['nome'];
