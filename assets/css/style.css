@@ -90,7 +90,7 @@ footer #credito {
     transform: skewY(390deg);
 }
 .card::after{
-    content: "Muisca";
+    content: "Musica";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -110,6 +110,7 @@ footer #credito {
 .card .imgbx img{
     max-width: 100%;
     transition: 0.5s;
+    max-height: 240px;
 
 }
 .card:hover img{
@@ -162,3 +163,4 @@ footer #credito {
     top: 0;
     opacity: 1;
 }
+

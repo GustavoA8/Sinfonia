@@ -34,7 +34,7 @@ const inicializarLoja = (items) => {
           <h3>${val.nome}</h3>
           <h5>${val.marca}</h5>
           <h2 class="price">R$ ${real}.<small>${cent}</small></h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="https://wa.me/5511959849449?text=${val.nome} ${val.marca}" target="blank" class="buy">Buy Now</a>
         </div>
       </div>
     `;
