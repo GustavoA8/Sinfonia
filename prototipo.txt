@@ -1,0 +1,17 @@
+mudar a cor(preto, branco e dourado)
+
+mudar 10x cartao
+
+mudar financiamento = parcelamento
+
+endereco: avenida itaberaba 1175
+
+manutenção: ficha (nome,instrumento,marca,telefone)- zap
+
+aba de aulas: violão e guitarra(1 aula por semana) -formulario de interesse[nome, aula de interesse]
+
+filtros*
+
+header: instrumentos,acessorios ,manutenção,  usados, aulas,  e contato
+
+guimarãescomercial.com.br
