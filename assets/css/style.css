@@ -4,7 +4,7 @@ body{
 }
 
 header nav {
-    background-color: #0000ff;
+    background-color: #E6D239;
 }
 #demo{
     width: 100%;
@@ -25,7 +25,7 @@ header nav {
     filter: invert(100%);
 }
 footer{
-    background-color: blue;
+    background-color: #E6D239;
 }
 footer ul li{
     list-style-type: none;

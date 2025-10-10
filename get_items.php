@@ -24,9 +24,10 @@ if ($tipo == "") {
     $sql = "SELECT item_id, item_nome, item_img, item_preco, nome FROM itens 
             INNER JOIN marca ON item_marca_fk = id_marca
             INNER JOIN tipo ON item_tipo_fk = tipo_id 
-            WHERE tipo_nome = ?";
+            WHERE tipo_nome LIKE ?";
+    $busca = $tipo . '%';
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $tipo);
+    $stmt->bind_param("s", $busca);
     $stmt->execute();
     $result = $stmt->get_result();
 

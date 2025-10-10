@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("get_items.php?tipo=Instrumento de Corda") // aqui você define o tipo
+    fetch("get_items.php?tipo=instrumento") // aqui você define o tipo
         .then(res => res.json())
         .then(data => {
             const container = document.getElementById("produtos");

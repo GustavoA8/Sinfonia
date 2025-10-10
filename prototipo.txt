@@ -1,6 +1,6 @@
 mudar a cor(preto, branco e dourado)
 
-mudar 10x cartao
+
 
 mudar financiamento = parcelamento
 
