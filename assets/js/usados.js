@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("get_items.php?tipo=Corda") // aqui você define o tipo
+    fetch("get_items.php?estado=seminovo") // aqui você define o tipo
         .then(res => res.json())
         .then(data => {
             const container = document.getElementById("produtos");
@@ -38,4 +38,3 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Erro ao carregar produtos:", error);
         });
 });
-
