@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background-color: black;
+    background-color: #F7F3E8;
     overflow-x: hidden;
 }
 
@@ -13,30 +13,30 @@ header nav {
     ;
 }
 #servico{
-    background-color: #E6C324;
+    background-color: #C9A24D;
 }
 #servico ul figure{
     display: flex;
 }
 #servico ul figure p{
     margin-bottom: 0;
-    color: aliceblue;
+    color: #1C1C1C;
 }
 #servico ul figure img{
     width: 14%;
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 #mp{
-    background-color: #E6C324;
+    background-color: #C9A24D;
 }
 footer{
-    background-color: #E6C324;
+    background-color: #C9A24D;
 }
 footer ul li{
     list-style-type: none;
 }
 footer{
-    color: aliceblue;
+    color: #1C1C1C;
 
 }
 footer #credito {
@@ -53,6 +53,7 @@ footer #credito {
 }
 #produtos{
     text-align: center;
+    
 }
 .produtos-single{
     background-color: aquamarine;
